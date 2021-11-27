@@ -1,5 +1,5 @@
 # treinamento-angular-java
 
-Treinamentos para as tecnologias de Java e Angular da indra em parceria com a Uniesp Centro Universitario.
+Treinamento para as tecnologias de Java e Angular da Indra em parceria com a Uniesp Centro Universitário.
 
 Projeto de um banco virtual (internet banking).
