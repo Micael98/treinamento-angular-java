@@ -19,7 +19,7 @@ export class ContasComponent implements OnInit {
   }
 
   listarTodasContas(){
-    this.contaService.listarTodosClientes().subscribe(contasApi => {
+    this.contaService.listarTodasContas().subscribe(contasApi => {
       this.contas = contasApi;
     });
   }

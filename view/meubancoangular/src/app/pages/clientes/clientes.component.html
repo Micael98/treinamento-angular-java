@@ -18,6 +18,7 @@
       <th scope="col">E-mail</th>
       <th scope="col">Oservações</th>
       <th scope="col">Ativos</th>
+      <th scope="col">Açôes</th>
   </thead>
   <tbody>
     <tr *ngFor="let cliente of clientes;">
@@ -31,24 +32,13 @@
         <i *ngIf="!cliente.ativo" class="fas fa-thumbs-down text-danger"></i>
 
       </td>
+      <td>
+        <a class="btn btn-danger btn-sm"(click)="confirmar(cliente.id)">Remover</a>
+      </td>
     </tr>
 
   </tbody>
 </table>
 
-<div class ="row">
-  <div class="col">
-    <app-label-input type="text" label="Nome"></app-label-input>
-  </div>
-  <div class="col">
-    <app-label-input type="text" label="Email"></app-label-input>
-  </div>
-  <div class="col">
-    <app-label-input type="text" label="CPF"></app-label-input>
-  </div>
-</div>
-
-
-<app-checkbox label="Aceitar os termos de uso"></app-checkbox>
-<app-button label="Cadastrar"></app-button>
+<a class="btn btn-dark" routerLink="cadastrar">Cadastrar Cliente</a>
 

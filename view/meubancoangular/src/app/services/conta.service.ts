@@ -9,11 +9,15 @@ import { IConta } from '../interfaces/conta';
 })
 export class ContaService {
 
-  api = `${environment.api}/contas/`
+api = `${environment.api}/contas/`
 
-  constructor(private http:HttpClient) { }
+constructor(private http:HttpClient) { }
 
-  listarTodosClientes() {
+listarTodasContas() {
     return this.http.get<IConta[]>(this.api);
-  }
 }
+
+  }
+
+
+

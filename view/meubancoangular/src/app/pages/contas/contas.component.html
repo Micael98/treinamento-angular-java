@@ -1,5 +1,14 @@
 <h1>Contas</h1>
 
+<div class="mb-4" *ngIf="!contas.length">
+  <div class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  Carregando...
+</div>
+
+<table *ngIf="contas.length" class="table table-dark table-striped"></table>
+
 <table class="table">
   <thead>
     <tr>
@@ -19,5 +28,5 @@
   </tbody>
 </table>
 
-<app-button label="Adicionar Conta"></app-button>
+<a class="btn btn-dark" routerLink="cadastrar">Adicionar Conta</a>
 

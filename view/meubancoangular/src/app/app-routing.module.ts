@@ -6,6 +6,7 @@ import { ExtratoComponent } from './pages/extrato/extrato.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SaqueComponent } from './pages/saque/saque.component';
 import { ContasComponent } from './pages/contas/contas.component';
+import { CadastroEdicaoClientesComponent } from './pages/clientes/cadastro-edicao-clientes/cadastro-edicao-clientes.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,8 @@ const routes: Routes = [
   { path:'deposito',component: DepositoComponent },
   { path:'saque',component: SaqueComponent },
   { path:'clientes',component: ClientesComponent},
+  { path:'clientes/cadastrar',component: CadastroEdicaoClientesComponent},
+  { path:'clientes/editar/:id',component: CadastroEdicaoClientesComponent},
   { path:'contas',component: ContasComponent}
 
 
