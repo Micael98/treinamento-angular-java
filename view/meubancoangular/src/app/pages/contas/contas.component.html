@@ -1,0 +1,23 @@
+<h1>Contas</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Agência</th>
+      <th scope="col">Conta</th>
+      <th scope="col">Cliente</th>
+      <th scope="col">Saldo</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let conta of contas;">
+      <td>{{ conta.cliente.nome }}</td>
+      <td>{{ conta.numero }}</td>
+      <td>{{ conta.agencia}}</td>
+      <td>{{ conta.saldo | currency: 'BRL' }}</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<app-button label="Adicionar Conta"></app-button>
+
