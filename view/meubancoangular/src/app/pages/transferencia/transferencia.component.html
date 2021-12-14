@@ -1,0 +1,43 @@
+<h1>Transferência</h1>
+
+<small>
+  {{ formGroup.value | json}}
+  {{ formGroup.valid}}
+</small>
+
+
+
+  <form [formGroup]="formGroup" (ngSubmit)="transferir()">
+
+  <div class="mb-3">
+    <label>Agência de Destino</label>
+    <input type="text" class="form-control" formControlName="agenciaDestino">
+  </div>
+
+  <div class="mb-3">
+    <label>Agência de Origem</label>
+    <input type="text" class="form-control" formControlName="agenciaOrigem">
+  </div>
+
+  <div class="mb-3">
+    <label>Número da Conta de Destino</label>
+    <input type="text" class="form-control" formControlName="numeroContaDestino">
+  </div>
+
+  <div class="mb-3">
+    <label>Número da Conta de Origem</label>
+    <input type="text" class="form-control" formControlName="numeroContaOrigem">
+  </div>
+
+  <div class="mb-3">
+    <label>Valor</label>
+    <input type="text" class="form-control" formControlName="valor">
+  </div>
+
+
+
+  <div>
+    <button type="submit" [disabled]="!formGroup.valid" class="btn btn-dark">Transferir</button>
+  </div>
+
+  </form>
